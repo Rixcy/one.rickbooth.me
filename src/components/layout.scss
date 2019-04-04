@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.thing {
+  @apply text-green;
+}
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;

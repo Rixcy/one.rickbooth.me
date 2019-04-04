@@ -22,6 +22,8 @@
     "react-helmet": "^5.2.0"
   },
   "devDependencies": {
+    "gatsby-plugin-sass": "^2.0.11",
+    "node-sass": "^4.11.0",
     "prettier": "^1.16.4",
     "tailwindcss": "^0.7.4"
   },

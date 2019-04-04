@@ -19,8 +19,10 @@ module.exports = {
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {
+        printRejected: true,
+        develop: true,
         tailwind: true,
-        purgeOnly: ["src/components/layout.css"]
+        purgeOnly: ["src/components/layout.scss"]
       }
     },
     {
@@ -36,5 +38,11 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        postCssPlugins: [require('tailwindcss')('./tailwind.js')]
+      }
+    }
   ],
 }
