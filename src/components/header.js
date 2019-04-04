@@ -4,10 +4,7 @@ import React from "react"
 
 const Header = ({ siteTitle }) => (
   <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
+    className="mb-4 bg-brand-1"
   >
     <div
       style={{
@@ -19,8 +16,8 @@ const Header = ({ siteTitle }) => (
       <h1 style={{ margin: 0 }}>
         <Link
           to="/"
+          className="text-white hover:text-grey-lightest no-underline"
           style={{
-            color: `white`,
             textDecoration: `none`,
           }}
         >
