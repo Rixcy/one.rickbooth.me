@@ -13,7 +13,7 @@ const IndexPage = () => (
       `portfolio`,
       `Rick Booth`
     ]} />
-    <h1 class="text-4xl">Hi people</h1>
+    <h1 className="text-4xl">Hi people</h1>
     <p className="text-2xl text-center mb-8 bg-brand-2 py-8 mt-4">Welcome to your new Gatsby site.</p>
     <button className="border-black p-4 m-4 border rounded-full hover:bg-brand-2">Click here</button>
     <p>Now go build something <span className="text-3xl text-brand-1">great.</span></p>

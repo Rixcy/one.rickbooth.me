@@ -6,6 +6,9 @@
 
 // You can delete this file if you're not using it
 
+require('typeface-arvo');
+require('typeface-lato');
+
 export const onServiceWorkerUpdateReady = () => {
   const answer = window.confirm(
     `This application has been updated. ` +
@@ -16,3 +19,4 @@ export const onServiceWorkerUpdateReady = () => {
     window.location.reload()
   }
 }
+
