@@ -15,11 +15,19 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-postcss`,
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        tailwind: true,
+        purgeOnly: ["src/components/layout.css"]
+      }
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `rickboothdotme`,
+        short_name: `rickboothdotme`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
