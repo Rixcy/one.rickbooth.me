@@ -13,6 +13,12 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        postCssPlugins: [require('tailwindcss')('./tailwind.js')]
+      }
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-postcss`,
@@ -21,8 +27,7 @@ module.exports = {
       options: {
         printRejected: true,
         develop: true,
-        tailwind: true,
-        purgeOnly: ["src/components/layout.scss"]
+        tailwind: true
       }
     },
     {
@@ -38,11 +43,5 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
-    {
-      resolve: `gatsby-plugin-sass`,
-      options: {
-        postCssPlugins: [require('tailwindcss')('./tailwind.js')]
-      }
-    }
   ],
 }
