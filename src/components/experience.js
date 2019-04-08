@@ -1,15 +1,18 @@
+// import { Link } from "gatsby"
+// import PropTypes from "prop-types"
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
+import Job from "./job.js"
 
-const Intro = () => (
+const Experience = () => (
   <StaticQuery
     query={graphql`
-      query introBlockQuery {
+      query jobsQuery {
         allDataJson {
           edges {
             node {
-              intro {
-                intro_text
+              jobs {
+                title
               }
             }
           }
@@ -24,9 +27,9 @@ const Intro = () => (
           }}
         >
           <div className="container">
-            <h2 className="text-center" style={{ margin: 0 }}>
-              {data.allDataJson.edges[0].node.intro.intro_text}
-            </h2>
+            {data.allDataJson.edges[0].node.jobs.map(( job, index ) => (
+              <Job key={index} job={job}/>
+            ))}
           </div>
         </section>
       </>
@@ -34,4 +37,4 @@ const Intro = () => (
   />
 )
 
-export default Intro
+export default Experience

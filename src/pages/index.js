@@ -1,8 +1,8 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import Experience from "../components/experience"
 
 const IndexPage = () => (
   <Layout>
@@ -13,7 +13,7 @@ const IndexPage = () => (
       `portfolio`,
       `Rick Booth`
     ]} />
-    <p className="text-center">Now go build something <span className="text-3xl text-brand-1">great.</span></p>
+    <Experience />
     <div className="flex my-8 justify-center">
       <div className="bg-brand-1 p-4 text-white">
         Brand 1
@@ -30,9 +30,6 @@ const IndexPage = () => (
       <div className="bg-brand-5 p-4 text-white">
         Brand 5
       </div>
-    </div>
-    <div className="mx-auto" style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
     </div>
   </Layout>
 )
