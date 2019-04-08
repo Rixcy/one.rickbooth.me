@@ -14,7 +14,7 @@ const Experience = () => (
               jobs {
                 title
                 company
-                location
+                company_website
                 role
                 time_in_role
                 skills
