@@ -1,5 +1,6 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
+import { FaBeer } from "react-icons/fa"
 
 const Intro = () => (
   <StaticQuery
@@ -27,6 +28,7 @@ const Intro = () => (
             <h2 className="text-center" style={{ margin: 0 }}>
               {data.allDataJson.edges[0].node.intro.intro_text}
             </h2>
+            <FaBeer />
           </div>
         </section>
       </>

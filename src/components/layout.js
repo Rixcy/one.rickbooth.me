@@ -9,7 +9,6 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
-import IntroBlock from './intro_block'
 import "./layout.scss"
 
 const Layout = ({ children }) => (
@@ -25,7 +24,6 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <IntroBlock />
         <div
           style={{
             margin: `0 auto`,
