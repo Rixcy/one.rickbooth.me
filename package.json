@@ -1,7 +1,7 @@
 {
   "name": "rickboothdotme-gatsby",
   "private": true,
-  "description": "A portfolio build with Gatsby",
+  "description": "A portfolio built with Gatsby",
   "version": "0.1.0",
   "author": "Rick Booth <admin@rickbooth.me>",
   "dependencies": {
