@@ -13,6 +13,12 @@ const Experience = () => (
             node {
               jobs {
                 title
+                company
+                location
+                role
+                time_in_role
+                skills
+                picture
               }
             }
           }
