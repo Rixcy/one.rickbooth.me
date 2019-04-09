@@ -36,9 +36,15 @@ const Experience = () => (
             className="container"
             style={{
               borderTop: `1px solid rgba(0,0,0,.1)`,
-              paddingTop: `50px`
+              paddingTop: `30px`
             }}
           >
+            <p
+              className="text-brand-1"
+              style={{ marginBottom: `50px` }}
+            >
+              Experience
+            </p>
             {data.allDataJson.edges[0].node.jobs.map(( job, index ) => (
               <Job key={index} job={job}/>
             ))}
