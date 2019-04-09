@@ -95,3 +95,7 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
 
 <!-- AUTO-GENERATED-CONTENT:END -->
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5aacbb0e-65b6-4fc5-af25-dd75e40b090b/deploy-status)](https://app.netlify.com/sites/rickboothdotme/deploys)
+
+[![License](https://img.shields.io/badge/license-CC%20BY%204.0-4cc61e.svg?logo=github)](https://creativecommons.org/licenses/by/4.0/)

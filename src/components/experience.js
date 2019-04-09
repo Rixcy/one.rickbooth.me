@@ -29,10 +29,16 @@ const Experience = () => (
       <>
         <section
           style={{
-            margin: `100px 0`
+            margin: `50px 0`,
           }}
         >
-          <div className="container">
+          <div
+            className="container"
+            style={{
+              borderTop: `1px solid rgba(0,0,0,.1)`,
+              paddingTop: `50px`
+            }}
+          >
             {data.allDataJson.edges[0].node.jobs.map(( job, index ) => (
               <Job key={index} job={job}/>
             ))}
