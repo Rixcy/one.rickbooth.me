@@ -18,7 +18,6 @@ const Experience = () => (
                 role
                 time_in_role
                 skills
-                picture
               }
             }
           }

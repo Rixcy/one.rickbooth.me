@@ -20,8 +20,7 @@
         "Javascript/ES6",
         "Nuxt",
         "AWS"
-      ],
-      "picture": "WebDev"
+      ]
     },
     {
       "title": "Software Developer",
@@ -34,8 +33,7 @@
         "Sass",
         "Javascript/jQuery",
         "MySQL"
-      ],
-      "picture": "SoftwareDev"
+      ]
     },
     {
       "title": "2nd Line Support Technician",
@@ -48,22 +46,20 @@
         "MIS (Management Information System) Support",
         "Windows Server Remote Support",
         "Mentoring Apprentices"
-      ],
-      "picture": "ITSupport"
+      ]
     },
     {
       "title": "Analytical Chemist",
       "company": "Keighley Laboratories",
       "company_website": "https://www.keighleylabs.co.uk/",
-      "role": "As a first job, I worked with ferrous and non-ferrous metals to determine their checmical compositions using various different wet chemistry methods.<br><br> I discovered my passion for IT in this role by managing the company's CMS and by helping improve general IT procedures such as creating an interactive spreadsheet for calculating the uncertainty of measurement with equipment and techniques.",
+      "role": "As a first job, I worked with ferrous and non-ferrous metals to determine their chemical compositions using various different wet chemistry methods.<br><br> I discovered my passion for IT in this role by managing the company's CMS and by helping improve general IT procedures such as creating an interactive spreadsheet for calculating the uncertainty of measurement with equipment and techniques.",
       "time_in_role": "September 2012 - September 2015",
       "skills": [
         "Atomic Absorption Spectroscopy",
         "Inductively Coupled Plasma Mass Spectrometry",
         "Titration",
         "Distillation"
-      ],
-      "picture": "Chemistry"
+      ]
     }
   ]
 }
