@@ -12,9 +12,9 @@ export default props => (
             target="_blank"
             rel="noopener noreferrer"
             className="
-              text-brand-1
+              text-grey-darkest
               no-underline
-              hover:underline
+              hover:text-grey-dark
             ">{props.job.company}</a>
         </p>
         <p

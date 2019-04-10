@@ -68,9 +68,9 @@ const Layout = ({ children }) => (
             {` `}
             <a
               className="
-                text-brand-1
+                text-grey-darkest
                 no-underline
-                hover:underline
+                hover:text-grey-dark
               "
               href="https://www.gatsbyjs.org">
               Gatsby

@@ -40,7 +40,7 @@ const Experience = () => (
             }}
           >
             <p
-              className="text-brand-1"
+              className="text-grey-darkest"
               style={{ marginBottom: `50px` }}
             >
               Experience

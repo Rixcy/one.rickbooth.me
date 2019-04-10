@@ -1,6 +1,6 @@
 {
   "intro": {
-    "intro_text": "<strong>Hi, I'm Rick Booth.</strong> Mjau myām̥ō mao nyav meong miao miauw nyav miav miáú. Miyāʾūṉ miaŭ miaou meong meow meo νιάου. Miyav mi'au mjau miyāʾūṉ mi'au miau meow ya-ong. Meong njäu miau ngiyaw ya-ong miau."
+    "intro_text": "<strong>Hi, I'm Rick Booth.</strong> I'm an ambitious and personable individual with experience in both web development and full stack software development. As a self-driven, forward-thinking individual, I constantly strive to embrace new techniques and technologies, understanding their impact and weaving them into new and existing projects alike."
   },
   "contact": {
     "linkedin": "https://www.linkedin.com/in/richard-booth-480677119/",
@@ -12,7 +12,7 @@
       "title": "Web Developer",
       "company": "Lead Tech",
       "company_website": "https://lead-tech.co.uk/",
-      "role": "Manx. Egyptian mau bombay and cornish rex for mouser. Tabby leopard siamese, lynx for russian blue burmese. Himalayan. Cornish rex birman for jaguar and persian malkin sphynx ocelot. Egyptian mau munchkin but siberian so ragdoll singapura.",
+      "role": "I'm currently working as a web developer for Lead Tech. Part of my role here involved me implementing a new technology stack for the team, moving away from using Jekyll to using VueJS for new projects.<br/><br/>These projects included building the main website, building landing pages and building a blog; focusing on increasing page speeds and making it quicker/easier to add further functionality with the power of Vue.",
       "time_in_role": "October 2018 - Present",
       "skills": [
         "VueJS",
@@ -27,7 +27,7 @@
       "title": "Software Developer",
       "company": "CPOMS",
       "company_website": "https://www.cpoms.co.uk/",
-      "role": "Panther russian blue so egyptian mau. Singapura savannah. Persian cougar so tabby and ragdoll. Cougar egyptian mau for sphynx turkish angora. Balinese savannah and bobcat.",
+      "role": "After working on several smaller projects I moved on to software development full time. Working in a small development team on a rapidly growing Ruby on Rails product. I worked on several interesting features and brought both internal and customer-based suggestions to life.",
       "time_in_role": "December 2016 - October 2018",
       "skills": [
         "Ruby on Rails",
@@ -41,7 +41,7 @@
       "title": "2nd Line Support Technician",
       "company": "Meritec Ltd",
       "company_website": "https://www.meritec.co.uk/",
-      "role": "Burmese lion or abyssinian ragdoll maine coon so bombay yet panther. Thai jaguar scottish fold, and bombay or balinese . Sphynx thai himalayan, yet malkin sphynx himalayan.",
+      "role": "Alongside the day to day role of providing technical support to schools trying to establish a data connection between their servers and ours, I also worked on several development projects such as implementing an online booking system, an internal documentation server with a built in CMS and WYSIWYG editor.<br/><br/>I focused improving the speed and SEO optimisation for the company website using techniques such as minifying files, compressing images and prioritising above-the-fold content.",
       "time_in_role": "September 2015 - December 2016",
       "skills": [
         "IT Support",
