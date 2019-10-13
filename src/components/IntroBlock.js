@@ -3,20 +3,34 @@ import styled from 'styled-components'
 import useDarkMode from '../hooks/useDarkMode'
 import Toggle from './Toggle'
 import SocialIcons from './SocialIcons'
+import Devices from '../core/Devices'
 
 const Text = styled.p`
   text-align: center;
-  font-size: 24px;
+  font-size: 18px;
+  ${Devices.large} {
+    font-size: 24px;
+  }
 `
 
 const IntroText = styled.span`
   font-weight: bold;
 `
 
-export default () => {
+const IntroBlock = styled.section`
+  padding-top: 4rem;
+  ${Devices.medium} {
+    padding-top: 5rem;
+  }
+  ${Devices.large} {
+    padding-top: 6rem;
+  }
+`
+
+export default (props) => {
   const [darkMode, setDarkMode] = useDarkMode()
   return (
-    <section className="pt-24">
+    <IntroBlock>
       <div>
         <Text>
           <IntroText>Hi, I'm Rick Booth.</IntroText> I'm an ambitious and personable individual with experience in both web development and full stack software development. As a self-driven, forward-thinking individual, I constantly strive to embrace new techniques and technologies, understanding their impact and weaving them into new and existing projects alike.
@@ -26,6 +40,6 @@ export default () => {
           <SocialIcons />
         </div>
       </div>
-    </section>
+    </IntroBlock>
   )
 }
