@@ -1,5 +1,5 @@
-require('typeface-arvo');
-require('typeface-lato');
+require('typeface-arvo')
+require('typeface-lato')
 
 export const onServiceWorkerUpdateReady = () => {
   const answer = window.confirm(
