@@ -1,10 +1,16 @@
 import React from "react"
-
+import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import IntroBlock from "../components/intro_block"
 import Experience from "../components/experience"
 // import BrandColours from "../components/brand_colours"
+
+const Container = styled.div`
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+`
 
 const IndexPage = () => (
   <Layout>
@@ -21,11 +27,15 @@ const IndexPage = () => (
       `Software Developer`,
       `Front End Developer`,
       `Back End Developer`,
-      `Full Stack Developer`
+      `Full Stack Developer`,
+      `Rixcy`,
+      `Rixcy Developer`
     ]} />
-    <IntroBlock />
-    {/* <BrandColours /> */}
-    <Experience />
+    <Container>
+      <IntroBlock />
+      {/* <BrandColours /> */}
+      <Experience />
+    </Container>
   </Layout>
 )
 

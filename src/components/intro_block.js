@@ -1,6 +1,7 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import { FaLinkedinIn, FaGithub, FaEnvelope } from "react-icons/fa"
+import styled from "styled-components"
 
 const Intro = () => (
   <StaticQuery
@@ -29,7 +30,7 @@ const Intro = () => (
             margin: `100px 0 50px 0`
           }}
         >
-          <div className="container">
+          <div>
             <h2
               className="text-center font-normal"
               style={{ margin: 0 }}
