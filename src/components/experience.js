@@ -1,8 +1,16 @@
-// import { Link } from "gatsby"
-// import PropTypes from "prop-types"
-import React from "react"
-import { StaticQuery, graphql } from "gatsby"
-import Job from "./Job.js"
+import React from 'react'
+import { StaticQuery, graphql } from 'gatsby'
+import Job from './Job.js'
+import styled from 'styled-components'
+
+const ExperienceContainer = styled.section`
+  margin: 25px 0;
+  transition: border-top 0.3s ease-out;
+  border-top: ${props => props.last ? 'none' : '1px solid rgba(0, 0, 0, 0.1)'};
+  .dark-mode & {
+    border-top: ${props => props.last ? 'none' : '1px solid rgba(74, 85, 104, 0.6)'};
+  }
+`
 
 const Experience = () => (
   <StaticQuery
@@ -25,31 +33,21 @@ const Experience = () => (
       }
     `}
     render={data => (
-      <>
-        <section
+      <ExperienceContainer>
+        <div
+          className="container"
           style={{
-            margin: `50px 0`,
+            paddingTop: `30px`
           }}
         >
-          <div
-            className="container"
-            style={{
-              borderTop: `1px solid rgba(0,0,0,.1)`,
-              paddingTop: `30px`
-            }}
-          >
-            <p
-              className="text-grey-darkest"
-              style={{ marginBottom: `50px` }}
-            >
-              Experience
-            </p>
-            {data.allDataJson.edges[0].node.jobs.map(( job, index ) => (
-              <Job key={index} job={job}/>
-            ))}
-          </div>
-        </section>
-      </>
+          <p className="mb-8">
+            Experience
+          </p>
+          {data.allDataJson.edges[0].node.jobs.map(( job, index ) => (
+            <Job key={index} job={job} last={index === data.allDataJson.edges[0].node.jobs.length-1}/>
+          ))}
+        </div>
+      </ExperienceContainer>
     )}
   />
 )

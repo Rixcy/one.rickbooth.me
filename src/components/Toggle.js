@@ -13,16 +13,21 @@ const DarkModeToggle = styled.div`
     &:last-child {
       color: #666;
     }
-
     &:focus {
       outline: none;
+    }
+    .dark-mode & {
+      color: #999;
+      &:last-child {
+        color: #ffffff;
+      }
     }
   }
 `
 
 const ToggleControl = styled.span`
   position: relative;
-  padding: 0 4px;
+  padding: 0 8px;
   display: flex;
   align-items: center;
 `

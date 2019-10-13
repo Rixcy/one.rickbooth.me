@@ -1,27 +1,30 @@
-// import { Link } from "gatsby"
-import React from "react"
+import React from 'react'
+import StyledLink from './StyledLink'
+import styled from 'styled-components'
 
-export default props => (
-  <>
-    <div className="flex mb-8">
-      <div className="flex-1">
-        <p className="font-primary font-bold">{props.job.title}</p>
-        <p className="mb-2 mt-1 font-secondary">
-          <a
-            href={props.job.company_website}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="
-              text-grey-darkest
-              no-underline
-              hover:text-grey-dark
-            ">{props.job.company}</a>
-        </p>
-        <p
-          className="font-secondary"
-          dangerouslySetInnerHTML={{__html: props.job.role}}/>
-      </div>
-      <hr/>
-    </div>
-  </>
+const JobContainer = styled.div`
+  flex: 1;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  transition: border-bottom 0.3s ease-out;
+  border-bottom: ${props => props.last ? 'none' : '1px solid rgba(0, 0, 0, 0.1)'};
+  .dark-mode & {
+    border-bottom: ${props => props.last ? 'none' : '1px solid rgba(74, 85, 104, 0.6)'};
+  }
+`
+
+const Job = (props) => (
+  <JobContainer last={props.last}>
+    <p className="font-primary font-bold">{props.job.title}</p>
+    <p className="mb-4 mt-1 font-secondary">
+      <StyledLink href={props.job.company_website}>
+        {props.job.company}
+      </StyledLink>
+    </p>
+    <p
+      className="font-secondary"
+      dangerouslySetInnerHTML={{__html: props.job.role}}/>
+  </JobContainer>
 )
+
+export default Job
