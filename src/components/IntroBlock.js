@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import useDarkMode from '../hooks/useDarkMode'
 import Toggle from './Toggle'
 import SocialIcons from './SocialIcons'
 import Devices from '../core/Devices'
@@ -28,7 +27,6 @@ const IntroBlock = styled.section`
 `
 
 export default (props) => {
-  const [darkMode, setDarkMode] = useDarkMode()
   return (
     <IntroBlock>
       <div>
@@ -36,7 +34,7 @@ export default (props) => {
           <IntroText>Hi, I'm Rick Booth.</IntroText> I'm an ambitious and personable individual with experience in both web development and full stack software development. As a self-driven, forward-thinking individual, I constantly strive to embrace new techniques and technologies, understanding their impact and weaving them into new and existing projects alike.
         </Text>
         <div className="flex mt-6">
-          <Toggle darkMode={darkMode} setDarkMode={setDarkMode} />
+          <Toggle darkMode={props.darkMode} setDarkMode={props.setDarkMode} />
           <SocialIcons />
         </div>
       </div>
