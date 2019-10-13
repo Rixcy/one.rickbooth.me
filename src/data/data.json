@@ -7,10 +7,23 @@
   "jobs": [
     {
       "title": "Web Developer",
+      "company": "Awaze UK",
+      "company_website": "https://awaze.co.uk/",
+      "role": "I’m currently working as a web developer for Awaze UK. Working here I get exposure to over 20 brands, working on minor changes to full page overhauls. Recently I built a proof of concept React monorepo to provide the team with simple, modular, component based development using new technologies. <br/><br/>This involved setting up Storybook to provide visual guides to components, writing simple Jest tests including setting up snapshots and setting up a build process to treat each component individually for exporting as a library.",
+      "time_in_role": "July 2019 - Present",
+      "skills": [
+        "React",
+        "Webpack/Babel/Rollup",
+        "Javascript/ES6",
+        "HTML5/CSS3"
+      ]
+    },
+    {
+      "title": "Web Developer",
       "company": "Lead Tech",
       "company_website": "https://lead-tech.co.uk/",
-      "role": "I'm currently working as a web developer for Lead Tech. Part of my role here involved me implementing a new technology stack for the team, moving away from using Jekyll to using VueJS for new projects.<br/><br/>These projects included building the main website, building landing pages and building a blog; focusing on increasing page speeds and making it quicker/easier to add further functionality with the power of Vue.",
-      "time_in_role": "October 2018 - Present",
+      "role": "I previously worked as a web developer for Lead Tech. Part of my role here involved me implementing a new technology stack for the team, moving away from using Jekyll to using VueJS for new projects. <br/><br/>These projects included building their main website, building landing pages and building a blog; focusing on increasing page speeds and making it quicker/easier to add further functionality with Vue’s powerful toolkit. <br/><br/>I also mentored a graduate developer during my time here, helping them learn technologies like Vue, TailwindCSS and ES6.",
+      "time_in_role": "October 2018 - July 2019",
       "skills": [
         "VueJS",
         "Sass",
