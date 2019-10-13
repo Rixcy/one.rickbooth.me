@@ -33,7 +33,9 @@ let colors = {
   'brand-2': '#e8e9f3',
   'brand-3': '#cecece',
   'brand-4': '#272635',
-  'brand-5': '#b1e5f2'
+  'brand-5': '#b1e5f2',
+
+  'red': '#bb1542'
 }
 
 module.exports = {

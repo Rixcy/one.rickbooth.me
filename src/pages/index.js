@@ -1,10 +1,10 @@
 import React from "react"
 import styled from "styled-components"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import IntroBlock from "../components/intro_block"
-import Experience from "../components/experience"
-// import BrandColours from "../components/brand_colours"
+import Layout from "../components/Layout"
+import SEO from "../components/SEO"
+import IntroBlock from "../components/IntroBlock"
+import Experience from "../components/Experience"
+// import BrandColours from "../components/BrandColours"
 
 const Container = styled.div`
   max-width: 600px;
