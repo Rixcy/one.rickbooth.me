@@ -10,9 +10,9 @@ import Jobs from '../components/Jobs'
 
 const Wrapper = styled.div`
   padding: 0 20px;
-  color: ${props => props.darkMode ? '#a0aec0' : '#1a202c'};
-  background-color: ${props => props.darkMode ? '#1a202c' : '#f3f3f3'};
-  background-image: url('data:image/svg+xml;utf8,<svg width="1440" height="950" xmlns="http://www.w3.org/2000/svg"><path d="M0 949.875c1.154 0 27.617-178.906 270.484-210.46 242.868-31.556 225.766-103.83 303.86-187.493 78.093-83.664 175.695-158.54 430.468-129.54 254.774 29 375.696 7.509 435.188-104.071-.215 0 0-318.311 0-318.311H0s.336 949.875 0 949.875z" fill="%23${props => props.darkMode ? '2d3748' : 'ffffff'}" fill-rule="evenodd"/></svg>');
+  color: #1a202c;
+  background-color: #f3f3f3;
+  background-image: url('data:image/svg+xml;utf8,<svg width="1440" height="950" xmlns="http://www.w3.org/2000/svg"><path d="M0 949.875c1.154 0 27.617-178.906 270.484-210.46 242.868-31.556 225.766-103.83 303.86-187.493 78.093-83.664 175.695-158.54 430.468-129.54 254.774 29 375.696 7.509 435.188-104.071-.215 0 0-318.311 0-318.311H0s.336 949.875 0 949.875z" fill="%23ffffff" fill-rule="evenodd"/></svg>');
   background-position: 0 0;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -20,6 +20,11 @@ const Wrapper = styled.div`
   ${Devices.medium} {
     border: 8px solid black;
     background-position: 0 -75px;
+  }
+  .dark-mode & {
+    background-color: #1a202c;
+    color: #a0aec0;
+    background-image: url('data:image/svg+xml;utf8,<svg width="1440" height="950" xmlns="http://www.w3.org/2000/svg"><path d="M0 949.875c1.154 0 27.617-178.906 270.484-210.46 242.868-31.556 225.766-103.83 303.86-187.493 78.093-83.664 175.695-158.54 430.468-129.54 254.774 29 375.696 7.509 435.188-104.071-.215 0 0-318.311 0-318.311H0s.336 949.875 0 949.875z" fill="%232d3748" fill-rule="evenodd"/></svg>');
   }
 `
 const Container = styled.div`
@@ -59,7 +64,7 @@ const IndexPage = () => {
     tabContent = <Skills />
   }
   return (
-    <Wrapper darkMode={darkMode}>
+    <Wrapper>
       <SEO title="Home" keywords={[
         `gatsby`,
         `application`,
