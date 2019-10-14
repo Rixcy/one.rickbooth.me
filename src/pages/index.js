@@ -7,8 +7,10 @@ import Footer from '../components/Footer'
 import SEO from '../components/SEO'
 import IntroBlock from '../components/IntroBlock'
 import Jobs from '../components/Jobs'
+import Skills from '../components/Skills'
 
 const Wrapper = styled.div`
+  min-height: 100vh;
   padding: 0 20px;
   color: #1a202c;
   background-color: #f3f3f3;
@@ -31,6 +33,7 @@ const Container = styled.div`
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  overflow: hidden;
 `
 const MainContent = styled.div`
   padding-top: 30px;
@@ -50,9 +53,6 @@ const ContentTab = styled.span`
   padding-bottom: 4px;
   border-bottom: 3px solid ${props => props.active ? 'rgba(160, 174, 192, 0.5)' : 'transparent'};
   cursor: pointer;
-`
-const Skills = styled.div`
-  min-height: 100vh;
 `
 const IndexPage = () => {
   const [darkMode, setDarkMode] = useDarkMode()
@@ -90,7 +90,7 @@ const IndexPage = () => {
               Experience
             </ContentTab>
             <ContentTab active={activeTab === 'skills'} onClick={() => setActiveTab('skills')}>
-              {/* Skills */}
+              Skills
             </ContentTab>
           </ContentTabs>
           {tabContent}

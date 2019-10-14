@@ -9,7 +9,7 @@ const DarkModeToggle = styled.div`
     border: none;
     color: #ffe600;
     cursor: pointer;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease-out;
     &:last-child {
       color: #666;
     }
@@ -57,7 +57,7 @@ const DarkModeCheck = styled.input`
     width: 18px;
     height: 18px;
     border-radius: 50%;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-out;
     cursor: pointer;
     position: absolute;
     left: 2px;
