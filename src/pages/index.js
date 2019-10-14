@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../assets/layout.scss'
 import styled from 'styled-components'
 import Devices from '../core/Devices'
@@ -6,7 +6,7 @@ import useDarkMode from '../hooks/useDarkMode'
 import Footer from '../components/Footer'
 import SEO from '../components/SEO'
 import IntroBlock from '../components/IntroBlock'
-import Experience from '../components/Experience'
+import Jobs from '../components/Jobs'
 
 const Wrapper = styled.div`
   padding: 0 20px;
@@ -27,8 +27,37 @@ const Container = styled.div`
   margin-left: auto;
   margin-right: auto;
 `
+const MainContent = styled.div`
+  padding-top: 30px;
+  margin: 25px 0;
+  transition: border-top 0.3s ease-out;
+  border-top: ${props => props.last ? 'none' : '1px solid rgba(0, 0, 0, 0.1)'};
+  .dark-mode & {
+    border-top: ${props => props.last ? 'none' : '1px solid rgba(74, 85, 104, 0.6)'};
+  }
+`
+const ContentTabs = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.8rem;
+`
+const ContentTab = styled.span`
+  padding-bottom: 4px;
+  border-bottom: 3px solid ${props => props.active ? 'rgba(160, 174, 192, 0.5)' : 'transparent'};
+  cursor: pointer;
+`
+const Skills = styled.div`
+  min-height: 100vh;
+`
 const IndexPage = () => {
   const [darkMode, setDarkMode] = useDarkMode()
+  const [activeTab, setActiveTab] = useState('experience')
+  let tabContent
+  if (activeTab === 'experience') {
+    tabContent = <Jobs />
+  } else if (activeTab === 'skills') {
+    tabContent = <Skills />
+  }
   return (
     <Wrapper darkMode={darkMode}>
       <SEO title="Home" keywords={[
@@ -50,7 +79,17 @@ const IndexPage = () => {
       ]} />
       <Container>
         <IntroBlock darkMode={darkMode} setDarkMode={setDarkMode} />
-        <Experience />
+        <MainContent>
+          <ContentTabs>
+            <ContentTab active={activeTab === 'experience'} onClick={() => setActiveTab('experience')}>
+              Experience
+            </ContentTab>
+            <ContentTab active={activeTab === 'skills'} onClick={() => setActiveTab('skills')}>
+              {/* Skills */}
+            </ContentTab>
+          </ContentTabs>
+          {tabContent}
+        </MainContent>
       </Container>
       <Footer />
     </Wrapper>
