@@ -53,6 +53,8 @@ const ContentTab = styled.span`
   padding-bottom: 4px;
   border-bottom: 3px solid ${props => props.active ? 'rgba(160, 174, 192, 0.5)' : 'transparent'};
   cursor: pointer;
+  user-select: none;
+  transition: border-bottom 0.5s ease-out;
 `
 const IndexPage = () => {
   const [darkMode, setDarkMode] = useDarkMode()
