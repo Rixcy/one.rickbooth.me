@@ -8,6 +8,8 @@ import SEO from '../components/SEO'
 import IntroBlock from '../components/IntroBlock'
 import Jobs from '../components/Jobs'
 import Skills from '../components/Skills'
+import Modal from '../components/Modal'
+import ContactForm from '../components/ContactForm'
 
 const Wrapper = styled.div`
   min-height: 100vh;
@@ -62,6 +64,7 @@ const ContentTab = styled.span`
 const IndexPage = () => {
   const [darkMode, setDarkMode] = useDarkMode()
   const [activeTab, setActiveTab] = useState('experience')
+  const [modalOpen, setModalOpen] = useState(false)
   let tabContent
   if (activeTab === 'experience') {
     tabContent = <Jobs />
@@ -69,40 +72,50 @@ const IndexPage = () => {
     tabContent = <Skills />
   }
   return (
-    <Wrapper>
-      <SEO title="Home" keywords={[
-        `gatsby`,
-        `application`,
-        `react`,
-        `portfolio`,
-        `Rick Booth`,
-        `Richard Booth`,
-        `Rick`,
-        `Richard`,
-        `Web Developer`,
-        `Software Developer`,
-        `Front End Developer`,
-        `Back End Developer`,
-        `Full Stack Developer`,
-        `Rixcy`,
-        `Rixcy Developer`
-      ]} />
-      <Container>
-        <IntroBlock darkMode={darkMode} setDarkMode={setDarkMode} />
-        <MainContent>
-          <ContentTabs>
-            <ContentTab active={activeTab === 'experience'} onClick={() => setActiveTab('experience')}>
-              Experience
-            </ContentTab>
-            <ContentTab active={activeTab === 'skills'} onClick={() => setActiveTab('skills')}>
-              Skills
-            </ContentTab>
-          </ContentTabs>
-          {tabContent}
-        </MainContent>
-      </Container>
-      <Footer />
-    </Wrapper>
+    <>
+      <Wrapper>
+        <SEO title="Home" keywords={[
+          `gatsby`,
+          `application`,
+          `react`,
+          `portfolio`,
+          `Rick Booth`,
+          `Richard Booth`,
+          `Rick`,
+          `Richard`,
+          `Web Developer`,
+          `Software Developer`,
+          `Front End Developer`,
+          `Back End Developer`,
+          `Full Stack Developer`,
+          `Rixcy`,
+          `Rixcy Developer`
+        ]} />
+        <Container>
+          <IntroBlock darkMode={darkMode} setDarkMode={setDarkMode} setModalOpen={() => setModalOpen(true)}/>
+          <MainContent>
+            <ContentTabs>
+              <ContentTab active={activeTab === 'experience'} onClick={() => setActiveTab('experience')}>
+                Experience
+              </ContentTab>
+              <ContentTab active={activeTab === 'skills'} onClick={() => setActiveTab('skills')}>
+                Skills
+              </ContentTab>
+            </ContentTabs>
+            {tabContent}
+          </MainContent>
+        </Container>
+        <Footer setModalOpen={() => setModalOpen(true)}/>
+      </Wrapper>
+      <Modal
+        onClose={() => setModalOpen(false)}
+        active={modalOpen}
+        body={<ContactForm active={modalOpen} />}
+        header={
+          `Get in touch!`
+        }
+      />
+    </>
   )
 }
 
