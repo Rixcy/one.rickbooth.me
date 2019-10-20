@@ -55,6 +55,9 @@ const ContentTab = styled.span`
   cursor: pointer;
   user-select: none;
   transition: border-bottom 0.5s ease-out;
+  &:hover {
+    border-bottom: 3px solid ${props => props.active ? 'rgba(160, 174, 192, 0.5)' : 'rgba(160, 174, 192, 0.3)'};
+  }
 `
 const IndexPage = () => {
   const [darkMode, setDarkMode] = useDarkMode()
