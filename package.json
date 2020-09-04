@@ -30,7 +30,7 @@
   "devDependencies": {
     "gatsby-plugin-sass": "^2.0.11",
     "gatsby-transformer-json": "^2.1.11",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.13.1",
     "prettier": "^1.16.4",
     "tailwindcss": "^0.7.4"
   },
