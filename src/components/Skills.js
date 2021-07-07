@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { darken, lighten } from 'polished'
+import { darken } from 'polished'
 
 const SkillsList = styled.div`
   display: flex;

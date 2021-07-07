@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react'
 
-export default function useMedia(queries, values, defaultValue) {
+const useMedia = (queries, values, defaultValue) => {
   const [value, setValue] = useState(defaultValue)
   // Array containing a media query list for each query
   const mediaQueryLists = queries.map(q => window.matchMedia(q))
 
   // State update function
-  const getValue = () => {
+  function getValue() {
     // Get index of first media query that matches
     const index = mediaQueryLists.findIndex(mql => mql.matches)
     // Return related value or defaultValue if none
@@ -32,3 +32,5 @@ export default function useMedia(queries, values, defaultValue) {
   )
   return value
 }
+
+export default useMedia

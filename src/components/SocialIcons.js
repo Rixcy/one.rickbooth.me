@@ -1,9 +1,9 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import { FaLinkedinIn, FaGithub, FaEnvelope } from 'react-icons/fa'
-import StyledLink from './StyledLink'
+import StyledLink, { StyledLinkButton } from './StyledLink'
 
-const SocialIcons = () => {
+const SocialIcons = ({ setModalOpen }) => {
   const data = useStaticQuery(graphql`
     query introBlockQuery {
       allDataJson {
@@ -12,7 +12,6 @@ const SocialIcons = () => {
             contact {
               linkedin
               github
-              email
             }
           }
         }
@@ -29,9 +28,9 @@ const SocialIcons = () => {
         <FaGithub size="1.5em"/>
       </StyledLink>
 
-      <StyledLink href={`mailto:${data.allDataJson.edges[0].node.contact.email}`} className="p-4">
+      <StyledLinkButton className="p-4" onClick={setModalOpen}>
         <FaEnvelope size="1.5em"/>
-      </StyledLink>
+      </StyledLinkButton>
     </div>
   )
 }

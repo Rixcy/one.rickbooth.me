@@ -26,7 +26,7 @@ const IntroBlock = styled.section`
   }
 `
 
-export default (props) => {
+export default ({ darkMode, setDarkMode, setModalOpen }) => {
   return (
     <IntroBlock>
       <div>
@@ -34,8 +34,8 @@ export default (props) => {
           <IntroText>Hi, I'm Rick Booth.</IntroText> I'm an ambitious and personable individual with experience in both web development and full stack software development. As a self-driven, forward-thinking individual, I constantly strive to embrace new techniques and technologies, understanding their impact and weaving them into new and existing projects alike.
         </Text>
         <div className="flex mt-6">
-          <Toggle darkMode={props.darkMode} setDarkMode={props.setDarkMode} />
-          <SocialIcons />
+          <Toggle darkMode={darkMode} setDarkMode={setDarkMode} />
+          <SocialIcons setModalOpen={setModalOpen}/>
         </div>
       </div>
     </IntroBlock>

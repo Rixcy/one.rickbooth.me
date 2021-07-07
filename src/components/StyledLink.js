@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
+import styled, {css} from 'styled-components'
 
-const StyledLinkTag = styled.a`
+const sharedStyle = css`
   color: #3d4852;
   text-decoration: none;
   transition: color 0.2s ease-out;
@@ -16,15 +16,35 @@ const StyledLinkTag = styled.a`
     }
   }
 `
+
+const StyledAnchor = styled.a`${sharedStyle}`
+const StyledButton = styled.button`
+  ${sharedStyle}
+  &:focus {
+    outline: none;
+  }
+`
+
 const StyledLink = (props) => {
   return (
-    <StyledLinkTag target="_blank" rel="noopener noreferrer" {...props}>
+    <StyledAnchor target="_blank" rel="noopener noreferrer" {...props}>
       {props.children}
-    </StyledLinkTag>
+    </StyledAnchor>
   )
 }
 StyledLink.propTypes = {
   href: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired
+}
+
+export const StyledLinkButton = (props) => {
+  return (
+    <StyledButton type="button" {...props}>
+      {props.children}
+    </StyledButton>
+  )
+}
+StyledLinkButton.propTypes = {
   children: PropTypes.node.isRequired
 }
 
