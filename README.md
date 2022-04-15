@@ -1,4 +1,4 @@
-# one.rickbooth.me
+# [one.rickbooth.me](https://one.rickbooth.me)
 
 Version one of my portfolio. Built in early 2018.
 
