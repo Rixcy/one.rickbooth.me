@@ -17,3 +17,19 @@ Version one of my portfolio. Built in early 2018.
 ### Light mode
 
 ![2022-04-15 19 04 06 one rickbooth me 33e01c04be38](https://user-images.githubusercontent.com/11819124/163605384-5bf8f18f-238f-4b55-a8a3-707fd61a3cf5.jpg)
+
+## Running locally
+
+Install dependencies:
+
+```bash
+yarn
+```
+
+Run the dev server:
+
+```bash
+yarn dev
+```
+
+Open `http://localhost:8000` with your browser to see the result.
