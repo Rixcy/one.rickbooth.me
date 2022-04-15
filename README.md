@@ -1,15 +1,19 @@
-<h1 align="center">
-	one.rickbooth.me
-</h1>
+# one.rickbooth.me
 
-## What's inside?
+Version one of my portfolio. Built in early 2018.
 
-1.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+## Features
 
-2.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+- Built with [Gatsby](https://www.gatsbyjs.com) 🚀
+- Styled with [styled-components](https://styled-components.com) and [TailwindCSS](https://tailwindcss.com) 💅
+- Light mode/dark mode 🌗
 
-3.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
+## Screenshots
 
-4.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+### Dark mode (default)
 
-5.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+![2022-04-15 19 03 57 one rickbooth me 3765f9c6e0a5](https://user-images.githubusercontent.com/11819124/163605376-c29242ed-345a-4883-a9af-d681a252b293.jpg)
+
+### Light mode
+
+![2022-04-15 19 04 06 one rickbooth me 33e01c04be38](https://user-images.githubusercontent.com/11819124/163605384-5bf8f18f-238f-4b55-a8a3-707fd61a3cf5.jpg)
